@@ -1,1 +1,81 @@
+1. Explain the difference between 'if...else' and 'switch' statements for conditional logic.
+==>
+    if...else এবং switch statement দুটি কন্ডিশনাল লজিকের জন্য ব্যবহৃত হয়, কিন্তু তাদের ব্যবহারে এবং সিনট্যাক্সে পার্থক্য আছে:
+if...else syntax:
+          if (condition1) {
+            // Code to execute if condition1 is true
+          } else if (condition2) {
+            // Code to execute if condition2 is true
+          } else {
+            // Code to execute if no condition is true
+          }
+Switch Syntax:
+          switch (expression) {
+            case value1:
+              // Code to execute if expression === value1
+              break;
+            case value2:
+              // Code to execute if expression === value2
+              break;
+            // More cases...
+            default:
+              // Code to execute if expression doesn't match any case
+          }
+
+প্রধান পার্থক্য গুলি আমার মত করে বলতে হলে:
+১। --> if...else এটা ব্যবহার করা হয় যখন আপনি একের পর এক condition পরীক্ষা করতে চান এবং ক্রমানুসারে। 
+   --> আপনি যখন একাধিক সম্ভাবনার সাথে একটি একক মান তুলনা করতে চান তখন Switch ব্যবহার করতে হয়।
+২। --> if...else দ্বারা একে অপরের সাথে তুলনা করা যায় রিলেশনাল অপারেটর (<, >, ==, ইত্যাদি) এবং লজিক্যাল অপারেটর (&&, ||) মাধ্যমে।
+  --> switch স্বাভাবিকভাবে বিভিন্ন মানের সাথে সমতা তুলনা করে। 
+৩। --> if...else এ Default Case ব্যাবহার হয়ই না কিন্তু switch এ একটি Default Case থাকে। 
+
+সংক্ষেপে, if...else এবং switch মধ্য আপনি কনটা ব্যাবহার করবেন এটা আপনার conditional logic এর উপর। 
+
+================== End of Q 1 ====================
+
+2. What is JavaScript, and what is its primary purpose in web development?
+==> JavaScript একটি ওবজেক্ট-ওরিয়েন্টেড, ডায়নামিক প্রোগ্রামিং ল্যাঙ্গুয়েজ। যা সাধারনত কোন ওয়েবসাইটে ব্যবহার করা হয়। এই language কে আবার client-side scripting language ও বলা হয় কারণ এর সোর্স কোড গুলো process হয় Client এর web browser দিয়ে।
+
+    JavaScript ওয়েব ডেভেলপমেন্টের Primary Purpose:-
+
+    1. Client-Side Interactivity
+    2. DOM Manipulation
+    3. Event Handling
+    4. Form Validation
+    5. Cross-Browser Compatibility
+    6. Third-Party Libraries and APIs
+    7. Server-Side Development 
+
+সংক্ষেপে বলতে গেলে ওয়েব ডেভেলপমেন্টে জাভাস্ক্রিপ্টের Primary Purpose হল ওয়েব পেজ এবং ওয়েব অ্যাপ্লিকেশনগুলিকে আরও ইন্টারেক্টিভ, প্রতিক্রিয়াশীল এবং বৈশিষ্ট্য সমৃদ্ধ করা।
+
+================== End of Q 2 ====================
+
+4. Explain the concept of "scope" in JavaScript and the difference between global and local scope.
+
+  ==> জাভাস্ক্রিপ্টে scope ভেরিয়েবল, অবজেক্ট এবং ফাংশনগুলির accessibility নির্ধারণ করে।
+        Two types of scope in JavaScript
+          ১। Global scope ২। Local scope
+
+  Difference between global and local scope
+
+১। Global scope ভেরিয়েবল এবং ফাংশনগুলি ফাংশন এবং ব্লকগুলির মধ্যে  যে কোনও জায়গা থেকে access করা যাই।
+২। Local scope ভেরিয়েবল এবং ফাংশনগুলি নির্দিষ্ট ফাংশন বা ব্লকের মধ্যে সীমাবদ্ধ। 
+
+================== End of Q 4 ====================
+
+
+5. What is the difference between "null" and "undefined" in JavaScript?
+
+  জাভাস্ক্রিপ্টে, "null" এবং "undefined" 
+
+  undefined 
+  undefined এটি একটি জাভাস্ক্রিপ্টের প্রাইমিটিভ মান। এটি সাধারণভাবে একটি ভ্যারিয়েবল যা ডিক্লেয়ার হয়েছে কিন্তু একটি মান দেয়া হয়নি তা দেখানোর জন্য ব্যবহৃত হয়।
+  ফাংশনের প্যারামিটার যেগুলি ভেলু দিয়া হয়নি, তাদের জন্যও এটি undefined দেখায়।
+  যদি আপনি কোনো অস্তিত্ব না রেখে একটি অবজেক্ট প্রোপার্টি বা অ্যারে এলিমেন্টে অ্যাকসেস করেন যা অস্তিত্ব নেই, তাদের ফলাফল হবে undefined.
+
+  null
+
+  null হল একটি অবজেক্ট যা কোনো অবজেক্টের মান বা একটি ভেরিয়েবলের ইচ্ছাকৃত অনুপস্থিতিকে প্রতিনিধিত্ব করে যার কোনো মান নেই।
+
+
 
